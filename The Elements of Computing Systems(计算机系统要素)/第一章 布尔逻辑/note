@@ -13,6 +13,7 @@
 
 硬件描述语言
 
+原始的门
 Nand门
 	a 	b	Nand(a, b)
 	0	0	1
@@ -20,3 +21,31 @@ Nand门
 	1	0	1
 	1	1	0
 所有其他的门电路和新票都能通过Nand门来构建
+
+基本逻辑门
+芯片名		Not
+输入		in
+输出		out
+功能		If in=0 then out=1 else out=0
+
+And
+......
+
+Or
+......
+
+芯片名		Xor(异或)
+输入		a, b
+输出		out
+功能		If a=/b then out=1 else out=0
+
+Multiplexor
+芯片名		Mux
+输入		a, b, sel
+输出		out
+功能		If sel=0 then out=a else out=b
+
+芯片名		Dmux
+输入		in, sel
+输出		a, b
+功能		If sel=0 then {a=in, b=0} else {a=0, b=in}
